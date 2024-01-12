@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+:root {
+  --color-body: #b6cbce;
+  --color-heading: #eef3db;
+  --color-base: #2C2C2C;
+  --color-base2: #2C2C2C;
+  --color-brand: #e0f780;
+  --color-brand2: #deff58;
+  --sidbar-width: 240px;
+  --font-base: "Bai Jamjuree";
+}
+* {
+  font-family: 'Handlee', cursive;
+
+}
+
+#logo {
+  font-weight: bolder;
+
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  opacity: 0;
+  transition: all 0.2s;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+.nav-link:hover::after {
+  opacity: 1;
+}
+.shadow-effect{
+  transition:all 0.5s;
+}
+.shadow-effect:hover{
+  box-shadow: 0 0 0 8px white;
+}
+.full-height {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
